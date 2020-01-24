@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
+import RestaurantCard from '../common/RestaurantCard';
 
 const Category = props => {
   const { results, title } = props;
@@ -11,7 +12,7 @@ const Category = props => {
         data={results}
         keyExtractor={item => item.id}
         renderItem={({ item }) => {
-          return <Text>{item.name}</Text>;
+          return <RestaurantCard restaurant={item} />;
         }}
       />
     </View>
@@ -19,7 +20,10 @@ const Category = props => {
 };
 
 const styles = StyleSheet.create({
-  mainContainer: {},
+  mainContainer: {
+    backgroundColor: '#222',
+    marginVertical: 20
+  },
   titleStyle: {
     fontSize: 20
   }
