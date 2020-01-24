@@ -45,13 +45,15 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: CONSTANTS.BORDER_RADIUS
   },
   iconStyle: {
-    color: CONSTANTS.BLACK,
+    color: CONSTANTS.WHITE,
     fontSize: 18
   },
   inputStyle: {
     flex: 1,
     paddingLeft: 10,
     color: CONSTANTS.BLACK,
+    backgroundColor: CONSTANTS.WHITE,
+    fontFamily: CONSTANTS.FONT.REGULAR,
     fontSize: 14
   }
 });

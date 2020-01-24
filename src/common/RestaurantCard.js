@@ -1,12 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableWithoutFeedback } from 'react-native';
+import { withNavigation } from 'react-navigation';
 import { CONSTANTS } from '../common/Constants';
 
 const RestaurantCard = props => {
-  const { restaurant } = props;
+  const { restaurant, navigation } = props;
   return (
     <TouchableWithoutFeedback
-      onPress={() => console.log('You tapped restaurant: ' + restaurant.name)}>
+      onPress={() => navigation.navigate('Restaurant', { id: restaurant.id })}>
       <View style={styles.cardStyle}>
         <View>
           <Image
@@ -52,4 +53,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default RestaurantCard;
+export default withNavigation(RestaurantCard);
