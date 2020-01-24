@@ -1,14 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { ScrollView, Text, StyleSheet } from 'react-native';
 import SearchBar from '../components/SearchBar';
 import useResults from '../hooks/useResults';
+import Category from '../components/Category';
 
 const SearchScreen = () => {
   const [searchValue, setSearchValue] = useState('');
   const [searchApi, results, errors] = useResults();
 
+  const filterResults = key => {
+    return results.filter(result => {
+      return result.price === key;
+    });
+  };
+
   return (
-    <View>
+    <ScrollView>
       <SearchBar
         value={searchValue}
         onChangeSearchValue={newSearchValue => setSearchValue(newSearchValue)}
@@ -16,7 +23,11 @@ const SearchScreen = () => {
       />
       <Text>We have found {results.length} results</Text>
       <Text style={styles.errorMessage}>{errors}</Text>
-    </View>
+      <Category title="More people, less expenditure" results={filterResults('$')} />
+      <Category title="Right in your budget" results={filterResults('$$')} />
+      <Category title="Heavy for your wallet" results={filterResults('$$$')} />
+      <Category title="Ohhh My Gawd!" results={filterResults('$$$$')} />
+    </ScrollView>
   );
 };
 
