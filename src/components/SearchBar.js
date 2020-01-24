@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: CONSTANTS.BORDER_RADIUS,
     margin: 15,
+    marginBottom: 0,
     flexDirection: 'row',
     overflow: 'hidden'
   },

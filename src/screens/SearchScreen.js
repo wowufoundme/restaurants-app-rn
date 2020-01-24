@@ -15,19 +15,20 @@ const SearchScreen = () => {
   };
 
   return (
-    <ScrollView>
+    <>
       <SearchBar
         value={searchValue}
         onChangeSearchValue={newSearchValue => setSearchValue(newSearchValue)}
         onPressDone={() => searchApi(searchValue)}
       />
-      <Text>We have found {results.length} results</Text>
       <Text style={styles.errorMessage}>{errors}</Text>
-      <Category title="More people, less expenditure" results={filterResults('$')} />
-      <Category title="Right in your budget" results={filterResults('$$')} />
-      <Category title="Heavy for your wallet" results={filterResults('$$$')} />
-      <Category title="Ohhh My Gawd!" results={filterResults('$$$$')} />
-    </ScrollView>
+      <ScrollView>
+        <Category title="More people, less expenditure" results={filterResults('$')} />
+        <Category title="Right in your budget" results={filterResults('$$')} />
+        <Category title="Heavy for your wallet" results={filterResults('$$$')} />
+        <Category title="Ohhh My Gawd!" results={filterResults('$$$$')} />
+      </ScrollView>
+    </>
   );
 };
 

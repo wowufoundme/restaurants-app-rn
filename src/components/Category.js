@@ -8,8 +8,12 @@ const Category = props => {
   return (
     <View style={styles.mainContainer}>
       <Text style={styles.titleStyle}>{title}</Text>
+      {results.length === 0 ? (
+        <Text style={{ marginTop: 10 }}>Sorry no restaurants found in this category.</Text>
+      ) : null}
       <FlatList
         horizontal
+        showsHorizontalScrollIndicator={false}
         data={results}
         keyExtractor={item => item.id}
         renderItem={({ item }) => {
@@ -22,13 +26,13 @@ const Category = props => {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    backgroundColor: CONSTANTS.GRAY,
     marginVertical: 5,
     padding: 10
   },
   titleStyle: {
     fontSize: 20,
-    fontFamily: 'Product Sans Regular'
+    fontFamily: 'Product Sans Regular',
+    color: CONSTANTS.PRIMARY_COLOR
   }
 });
 
