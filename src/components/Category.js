@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 import RestaurantCard from '../common/RestaurantCard';
+import { CONSTANTS } from '../common/Constants';
 
 const Category = props => {
   const { results, title } = props;
@@ -21,11 +22,13 @@ const Category = props => {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    backgroundColor: '#222',
-    marginVertical: 20
+    backgroundColor: CONSTANTS.GRAY,
+    marginVertical: 5,
+    padding: 10
   },
   titleStyle: {
-    fontSize: 20
+    fontSize: 20,
+    fontFamily: 'Product Sans Regular'
   }
 });
 

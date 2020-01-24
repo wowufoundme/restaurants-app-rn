@@ -71,6 +71,28 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>Gelasio-Bold.ttf</string>
+		<string>Gelasio-BoldItalic.ttf</string>
+		<string>Gelasio-Italic.ttf</string>
+		<string>Gelasio-Medium.ttf</string>
+		<string>Gelasio-MediumItalic.ttf</string>
+		<string>Gelasio-Regular.ttf</string>
+		<string>Gelasio-SemiBold.ttf</string>
+		<string>Gelasio-SemiBoldItalic.ttf</string>
+		<string>Lato-Black.ttf</string>
+		<string>Lato-BlackItalic.ttf</string>
+		<string>Lato-Bold.ttf</string>
+		<string>Lato-BoldItalic.ttf</string>
+		<string>Lato-Italic.ttf</string>
+		<string>Lato-Light.ttf</string>
+		<string>Lato-LightItalic.ttf</string>
+		<string>Lato-Regular.ttf</string>
+		<string>Lato-Thin.ttf</string>
+		<string>Lato-ThinItalic.ttf</string>
+		<string>Product Sans Bold Italic.ttf</string>
+		<string>Product Sans Bold.ttf</string>
+		<string>Product Sans Italic.ttf</string>
+		<string>Product Sans Regular.ttf</string>
 	</array>
 </dict>
 </plist>
