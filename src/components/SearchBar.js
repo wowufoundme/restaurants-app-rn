@@ -16,7 +16,7 @@ const SearchBar = props => {
       <TextInput
         value={searchValue}
         onChangeText={text => onChangeSearchValue(text)}
-        placeholder="Search"
+        placeholder="Pasta... Pizza... Lasagna..."
         autoCompleteType="off"
         autocorrect={false}
         style={styles.inputStyle}
