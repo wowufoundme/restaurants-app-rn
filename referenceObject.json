@@ -28,5 +28,74 @@
     "review_count": 963,
     "transactions": ["delivery"],
     "url": "https://www.yelp.com/biz/paesano-ristorante-italiano-san-jose?adjust_creative=7G8sX99e_yOKReVwJ4gFkA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=7G8sX99e_yOKReVwJ4gFkA"
+  },
+  {
+    "alias": "dolce-sicilia-san-jose-3",
+    "categories": [
+      { "alias": "desserts", "title": "Desserts" },
+      { "alias": "italian", "title": "Italian" },
+      { "alias": "gelato", "title": "Gelato" }
+    ],
+    "coordinates": { "latitude": 37.30717, "longitude": -121.90076 },
+    "display_phone": "(408) 882-3953",
+    "distance": 1724.4921976135604,
+    "id": "nZyCo-rCRN_dFFuQ50HJPQ",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/2woSDZJFoKFqOeVXXPpg-Q/o.jpg",
+    "is_closed": false,
+    "location": {
+      "address1": "1165 Lincoln Ave",
+      "address2": "Ste 110",
+      "address3": "",
+      "city": "San Jose",
+      "country": "US",
+      "display_address": ["1165 Lincoln Ave", "Ste 110", "San Jose, CA 95125"],
+      "state": "CA",
+      "zip_code": "95125"
+    },
+    "name": "Dolce Sicilia",
+    "phone": "+14088823953",
+    "price": "$",
+    "rating": 5,
+    "review_count": 84,
+    "transactions": ["pickup", "delivery"],
+    "url": "https://www.yelp.com/biz/dolce-sicilia-san-jose-3?adjust_creative=7G8sX99e_yOKReVwJ4gFkA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=7G8sX99e_yOKReVwJ4gFkA"
+  },
+  {
+    "alias": "antipastos-by-derose-gourmet-meat-fish-and-deli-san-jose",
+    "categories": [
+      { "alias": "delis", "title": "Delis" },
+      { "alias": "italian", "title": "Italian" },
+      { "alias": "beerbar", "title": "Beer Bar" }
+    ],
+    "coordinates": { "latitude": 37.3801496200615, "longitude": -121.827435493469 },
+    "display_phone": "(408) 251-5647",
+    "hours": [{ "hours_type": "REGULAR", "is_open_now": false, "open": [] }],
+    "id": "zXQF2Z_tyujpn9hJlJhURQ",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/wjgzUOevd7G6cQan_yrzgg/o.jpg",
+    "is_claimed": true,
+    "is_closed": false,
+    "location": {
+      "address1": "3454 McKee Rd",
+      "address2": "",
+      "address3": "",
+      "city": "San Jose",
+      "country": "US",
+      "cross_streets": "",
+      "display_address": ["3454 McKee Rd", "San Jose, CA 95127"],
+      "state": "CA",
+      "zip_code": "95127"
+    },
+    "name": "Antipasto's By Derose Gourmet Meat Fish & Deli",
+    "phone": "+14082515647",
+    "photos": [
+      "https://s3-media2.fl.yelpcdn.com/bphoto/wjgzUOevd7G6cQan_yrzgg/o.jpg",
+      "https://s3-media3.fl.yelpcdn.com/bphoto/MBEQMQ-79qRhkCK1lpTbMQ/o.jpg",
+      "https://s3-media3.fl.yelpcdn.com/bphoto/dbZIF5wufWwHDpl6Gr64_w/o.jpg"
+    ],
+    "price": "$$",
+    "rating": 4.5,
+    "review_count": 793,
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/antipastos-by-derose-gourmet-meat-fish-and-deli-san-jose?adjust_creative=7G8sX99e_yOKReVwJ4gFkA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=7G8sX99e_yOKReVwJ4gFkA"
   }
 ]

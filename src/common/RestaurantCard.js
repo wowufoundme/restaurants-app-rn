@@ -7,7 +7,7 @@ const RestaurantCard = props => {
   const { restaurant, navigation } = props;
   return (
     <TouchableWithoutFeedback
-      onPress={() => navigation.navigate('Restaurant', { id: restaurant.id })}>
+      onPress={() => navigation.navigate('Restaurant', { restaurant: restaurant })}>
       <View style={styles.cardStyle}>
         <View>
           <Image

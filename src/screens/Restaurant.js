@@ -3,20 +3,20 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 import yelp from '../api/yelp';
 
 const Restaurant = props => {
-  const [restaurant, setRestaurant] = useState(null);
   const { navigation } = props;
-  const getId = navigation.getParam('id');
+  const rest = navigation.getParam('restaurant');
+  const [restaurant, setRestaurant] = useState(null);
+  const getId = rest.id;
+
+  useEffect(() => {
+    console.log(getId);
+    getRestaurant(getId);
+  }, []);
 
   const getRestaurant = async id => {
     const response = await yelp.get(`/${id}`);
-    console.log(response.data.name);
     setRestaurant(response.data);
-    console.log(restaurant.name);
   };
-
-  useEffect(() => {
-    getRestaurant(getId);
-  }, []);
 
   if (!restaurant) {
     return null;
@@ -24,8 +24,10 @@ const Restaurant = props => {
 
   return (
     <View>
-      {/* <Image source={{ uri: restaurant.image_url }} style={{ height: 200, width: 400 }} /> */}
-      <Text>Hello world</Text>
+      <Text>{restaurant.name}</Text>
+      <Image source={{ uri: restaurant.photos[0] }} style={{ height: 200, width: 400 }} />
+      <Image source={{ uri: restaurant.photos[1] }} style={{ height: 200, width: 400 }} />
+      <Image source={{ uri: restaurant.photos[2] }} style={{ height: 200, width: 400 }} />
     </View>
   );
 };

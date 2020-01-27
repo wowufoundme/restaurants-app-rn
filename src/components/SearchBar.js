@@ -28,13 +28,13 @@ const SearchBar = props => {
 
 const styles = StyleSheet.create({
   searchContainer: {
-    backgroundColor: CONSTANTS.GRAY,
     height: 40,
     borderRadius: CONSTANTS.BORDER_RADIUS,
     margin: 15,
     marginBottom: 0,
     flexDirection: 'row',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    elevation: 2
   },
   iconContainer: {
     height: 40,
@@ -52,9 +52,9 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingLeft: 10,
     color: CONSTANTS.BLACK,
-    backgroundColor: CONSTANTS.WHITE,
     fontFamily: CONSTANTS.FONT.REGULAR,
-    fontSize: 14
+    fontSize: 14,
+    backgroundColor: CONSTANTS.WHITE
   }
 });
 

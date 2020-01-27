@@ -5,6 +5,9 @@ import { CONSTANTS } from '../common/Constants';
 
 const Category = props => {
   const { results, title } = props;
+  if (!results.length) {
+    return null;
+  }
   return (
     <View style={styles.mainContainer}>
       <Text style={styles.titleStyle}>{title}</Text>
@@ -27,7 +30,12 @@ const Category = props => {
 const styles = StyleSheet.create({
   mainContainer: {
     marginVertical: 5,
-    padding: 10
+    marginLeft: 10,
+    paddingVertical: 30,
+    paddingLeft: 10,
+    backgroundColor: CONSTANTS.WHITE,
+    borderRadius: 5,
+    elevation: 5
   },
   titleStyle: {
     fontSize: 20,
