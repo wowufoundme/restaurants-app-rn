@@ -11,7 +11,6 @@ const Restaurant = props => {
   const getId = rest.id;
 
   useEffect(() => {
-    console.log(getId);
     getRestaurant(getId);
   }, []);
 
